@@ -3,19 +3,16 @@ from multiapp import MultiApp
 from apps import home, login # import your app modules here
 import os
 from PIL import Image, ImageOps
+import base64
 
 
-
-# def load_image(img):
-#     im =Image.open(os.path.join(img))
-#     return im
 
 app = MultiApp()
+
 
 st.markdown("""
 # Distal Wrist Fracture Identifier
 """)
-# st.image(load_image('C:\Users\Yvonne\Desktop\multi-page-app'))
 
 # Add all your application here
 app.add_app("Home", home.app)

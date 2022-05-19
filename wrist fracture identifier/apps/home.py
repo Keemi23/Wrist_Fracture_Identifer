@@ -1,9 +1,21 @@
 import streamlit as st
+from PIL import Image, ImageOps
+from multiapp import MultiApp
+
+
+app = MultiApp()
+
+
 
 
 def app():
     st.title('Home')
     
+    
+    image = Image.open("C:\\Users\\Yvonne\\Desktop\\wrist fracture identifier\\LOGO.jpg")
+    st.image(image, caption='Distal Wrist Fracture Identifier', use_column_width=True)
+
+
     
 
     st.write("""The radius is one of two forearm bones and is located on the thumb side.  
@@ -13,3 +25,6 @@ def app():
              """)
     
     
+    
+
+
